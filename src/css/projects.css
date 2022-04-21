@@ -1,0 +1,94 @@
+/* Navbar Start */
+.navbar {
+  background: #222222;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  position: sticky;   /* sticks to the screen when you scroll */
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar__logo {   /* . means class; # means id */
+  background-size: 100%;
+  background-clip: text;   /* compatability? */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar__logo__color {
+  background-color: #ffffff;
+}
+
+.navbar__logo__color:hover {
+  background-color: #0000ff;
+  transition: all 0.3s ease;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+  color: #0000ff;
+  transition: all 0.3s ease;
+}
+/* Navbar End */
+
+
+/* Main Start */
+.main {
+  background: #000000;
+  padding: 25px 0;
+}
+
+.text {
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Main End */
