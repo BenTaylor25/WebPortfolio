@@ -2,7 +2,10 @@
 Personal website with project showcase.
 
 To Do:
-    trim main css
-    review main html
-    start bio page
+    Info page
+        Programming Lanuguages and Technologies from Bio page.
+        LinkedIn, GitHub, YouTube.
+
+    Projects page
+        Figure out how to represent projects.
 
