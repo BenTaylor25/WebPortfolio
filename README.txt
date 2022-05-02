@@ -4,3 +4,4 @@ https://bentaylor25.github.io/WebPortfolio/src/html/home.html
 
 to do:
     rework ui for mobile
+    fix background (not completely black on taller displays)
