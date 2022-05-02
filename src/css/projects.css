@@ -54,6 +54,7 @@ table {
 }
 /* /Reset */
 
+
 /* Navbar Start */
 .navbar {
   background: #222222;
@@ -132,13 +133,13 @@ table {
 .main {
   background: #000000;
   padding: 25px 0;
-
 }
 
 .text {
   color: #ffffff;
   text-align: center;
   font-family: "monaco", monospace;
+  text-size-adjust: 100%;
 }
 
 img {
