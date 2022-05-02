@@ -1,5 +1,4 @@
 
 Personal website with project showcase.
+https://bentaylor25.github.io/WebPortfolio/src/html/home.html
 
-To Do:
-    Figure out how to do hosting.
