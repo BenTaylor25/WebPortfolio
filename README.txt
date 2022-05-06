@@ -5,3 +5,4 @@ https://bentaylor25.github.io/WebPortfolio/src/html/home.html
 to do:
     rework ui for mobile
     fix "Ben Taylor" logo in Dark Reader mode
+    add footer with links to github, linkedin and youtube

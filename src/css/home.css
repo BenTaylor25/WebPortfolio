@@ -134,10 +134,16 @@ table {
 /* Navbar End */
 
 
+/* Footer */
+
+/* /Footer*/
+
+
 /* Main Start */
 .main {
   background: #000000;
   padding: 25px 0;
+  padding-bottom: 5%;
 }
 
 .text {
@@ -150,6 +156,5 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /*padding-bottom: 5%;*/
 }
 /* Main End */
