@@ -96,11 +96,11 @@ table {
 }
 
 .navbar__logo__color {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .navbar__logo__color:hover {
-  background-color: #0000ff;
+  background-color: #0000ff !important;
   transition: all 0.2s ease;
 }
 
