@@ -135,12 +135,9 @@ table {
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   background-color: #333333;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .social_media {
@@ -154,7 +151,7 @@ footer {
 
 .social_media__link {
   color: white;
-  font-size: 1.5rem;
+  font-size: 4vh;
   margin-left: 10%;
   margin-right: 10%;
 }
