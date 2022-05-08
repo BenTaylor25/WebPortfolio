@@ -156,6 +156,10 @@ footer {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+.not_footer {
+  min-height: calc(96vh - 2rem);
+}
 /* /Footer*/
 
 
