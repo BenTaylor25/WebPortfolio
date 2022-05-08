@@ -59,10 +59,11 @@ table {
 /* /Reset */
 
 
-
 /* Navbar Start */
+
 .navbar {
   background: #222222;
+  justify-content: space-between;
   height: 75px;
   display: flex;
   align-items: center;
@@ -72,12 +73,21 @@ table {
   z-index: 999;
 }
 
+.navbar__title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  width: 40%;
+  display: flex;
+  justify-content: center; 
+}
+
 .navbar__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 75px;
   z-index: 1;
-  width: 100%;
+  width: 60%;
+  height: 100%;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
@@ -182,3 +192,7 @@ img {
   margin-right: auto;
 }
 /* /Main */
+
+
+
+/* 650 px width */
