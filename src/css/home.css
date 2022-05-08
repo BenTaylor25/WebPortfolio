@@ -83,7 +83,7 @@ table {
 
 .navbar__container {
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   height: 75px;
   z-index: 1;
   width: 60%;
