@@ -60,7 +60,6 @@ table {
 
 
 /* Navbar Start */
-
 .navbar {
   background: #222222;
   justify-content: space-between;
@@ -81,6 +80,26 @@ table {
   justify-content: center; 
 }
 
+.navbar__title a {
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  background-color: #ffffff !important;
+}
+
+.navbar__title a:hover {
+  background-color: #0000ff !important;
+}
+
 .navbar__container {
   display: flex;
   justify-content: center;  
@@ -93,30 +112,7 @@ table {
   padding: 0 50px;
 }
 
-#navbar__logo {   /* . means class; # means id */
-  background-size: 100%;
-  background-clip: text;   /* compatability? */
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-.navbar__logo__color {
-  background-color: #ffffff !important;
-}
-
-.navbar__logo__color:hover {
-  background-color: #0000ff !important;
-  transition: all 0.3s ease;
-}
-
-.navbar__menu {
+.navbar__container ul {
   display: flex;
   align-items: center;
   list-style: none;
@@ -126,7 +122,7 @@ table {
   height: 80px;
 }
 
-.navbar__links {
+.navbar__container a {
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -137,9 +133,55 @@ table {
   transition: all 0.3s ease;
 }
 
-.navbar__links:hover {
+.navbar__container a:hover {
   color: #0000ff;
   transition: all 0.3s ease;
+}
+
+.toggle_button {
+  position: absolute;
+  right: 1rem;
+  display: none; /* */
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40px;
+  height: 75%;
+  z-index: 10;
+}
+
+.toggle_button:hover {
+  cursor: pointer;
+}
+
+.toggle_button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 12% auto;
+}
+
+@media (max-width: 650px) {
+  .toggle_button {
+    display: flex;
+  }
+
+  .navbar__container {
+    display: none;
+    padding:0;
+    margin: 0;
+  }
+  .navbar__container ul {
+    flex-direction: column;
+    background-color: rgba(200,200,200,1);
+    width: 50%;
+    padding: 0;
+    margin-top: 65px;  /* WIP */
+  }
+
+  .navbar__container.active {
+    display: flex;
+  }
 }
 /* Navbar End */
 
