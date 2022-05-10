@@ -4,7 +4,6 @@ https://bentaylor25.github.io/WebPortfolio/src/html/home.html
 
 to do:
     responsive
-        Navbar "Ben Taylor" (currently two lines)
         text size
         info logos
         project table
