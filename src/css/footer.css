@@ -1,0 +1,26 @@
+
+footer {
+    background-color: #333333;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+  
+.social_media {
+    display: grid;
+    margin-left: 30%;
+    margin-right: 30%;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    font-family: "monaco", monospace;
+}
+  
+.social_media__link {
+    color: white;
+    font-size: 1.25rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  
+.not_footer {
+    min-height: calc(96vh - 2rem);
+}
