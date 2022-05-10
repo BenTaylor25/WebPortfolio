@@ -5,6 +5,25 @@
   padding-bottom: 5%;
 }
 
+.main h1 {
+  font-size: 1.5rem;
+}
+
+.main h3 {
+  font-size: 1rem;
+}
+
+@media (max-width: 650px) {
+  .main h1 {
+    font-size: 1rem;
+  }
+
+  .main h3 {
+    font-size: 0.6rem;
+  }
+}
+
+
 .text {
   color: #ffffff;
   text-align: center;
@@ -15,4 +34,13 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 25%;
+  height: auto;
+}
+
+@media (orientation: portrait) {
+  img {
+    width: 50%;
+    height: auto;
+  }
 }

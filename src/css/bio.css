@@ -14,5 +14,13 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 25%;
+  height: auto;
 }
 
+@media (orientation: portrait) {
+  img {
+    width: 50%;
+    height: auto;
+  }
+}
