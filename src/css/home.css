@@ -168,20 +168,31 @@ table {
 
   .navbar__container {
     display: none;
-    padding:0;
-    margin: 0;
-  }
-  .navbar__container ul {
-    flex-direction: column;
-    background-color: rgba(200,200,200,1);
-    width: 50%;
     padding: 0;
-    margin-top: 65px;  /* WIP */
+    margin: 0;
   }
 
   .navbar__container.active {
     display: flex;
+    flex-direction: column;
+    height: 100%; 
   }
+  
+  .navbar__container.active ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 315px;
+  }
+
+  .navbar__container.active a {
+    width: 100%;
+    background-color: rgba(200,200,200,0.9);
+  }
+
+  .navbar__container.active a:hover {
+    background-color: rgba(100,100,100,0.9);
+  }
+
 }
 /* Navbar End */
 
