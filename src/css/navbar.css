@@ -8,7 +8,7 @@
     position: sticky;   /* sticks to the screen when you scroll */
     top: 0;
     z-index: 999;
-  }
+}
 
 .navbar__title {
     font-size: 1.5rem;
@@ -30,6 +30,7 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-family: "monaco" monospace;
     transition: all 0.3s ease;
     background-color: #ffffff !important;
 }
@@ -96,10 +97,18 @@
     width: 100%;
     background-color: white;
     border-radius: 10px;
-    margin: 12% auto;
+    margin: 2.5% auto;
 }
 
 @media (max-width: 650px) {
+    .navbar__title {
+        width: 35%;
+    }
+
+    .navbar__title a {
+        font-size: 1.5rem;
+    }
+
     .toggle_button {
         display: flex;
     }
@@ -108,27 +117,29 @@
         display: none;
         padding: 0;
         margin: 0;
+        height: 100%;
+        flex-direction: column;
     }
 
     .navbar__container.active {
         display: flex;
-        flex-direction: column;
-        height: 100%; 
     }
 
     .navbar__container.active ul {
-        display: flex;
         flex-direction: column;
         margin-top: 315px;
     }
 
-    .navbar__container.active a {
+    .navbar__container a {
         width: 100%;
-        background-color: rgba(200,200,200,0.9);
+    }
+
+    .navbar__container.active a {
+        background-color: rgba(100, 100, 100, 0.9);
     }
 
     .navbar__container.active a:hover {
-        background-color: rgba(100,100,100,0.9);
+        background-color: rgba(150, 150, 150, 0.9);
     }
 
 }
