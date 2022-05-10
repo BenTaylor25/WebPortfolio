@@ -41,6 +41,5 @@ img {
 @media (orientation: portrait) {
   img {
     width: 50%;
-    height: auto;
   }
 }
