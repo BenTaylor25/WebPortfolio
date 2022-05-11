@@ -1,33 +1,34 @@
 
 .main {
   background: #000000;
-  padding: 25px 0;
+  padding: 0 0;
   padding-bottom: 5%;
+  text-align: center;
+  font-family: "monaco", monospace;
+}
+
+.main h1, .main h3 {
+  color: #ffffff;
 }
 
 .main h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .main h3 {
   font-size: 1rem;
 }
 
-@media (max-width: 650px) {
+@media (orientation: portrait) {
   .main h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .main h3 {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
+    width: 50%;
+    margin-left: 25%
   }
-}
-
-
-.text {
-  color: #ffffff;
-  text-align: center;
-  font-family: "monaco", monospace;
 }
 
 img {
