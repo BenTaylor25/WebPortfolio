@@ -33,7 +33,7 @@ footer {
     }
 
     .not_footer {
-        min-height: calc(96vh - 5rem);
+        min-height: calc(96vh - 6.5rem);
     }
 
     .social_media {
