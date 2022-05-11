@@ -29,7 +29,7 @@ footer {
 
 @media (max-width: 650px) {
     footer {
-        height: 5rem;
+        height: 6.5rem;
     }
 
     .not_footer {
