@@ -6,6 +6,5 @@ to do:
     responsive
         text size
         info logos
-        project table
         
     fix "Ben Taylor" logo in Dark Reader mode
