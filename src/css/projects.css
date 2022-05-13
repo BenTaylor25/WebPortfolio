@@ -54,6 +54,27 @@ table h4 {
   }
 }
 
+.col__name {
+  width: 10%;
+}
+.col__tech {
+  width: 20%;
+}
+.col__desc {
+  width: 60%;
+}
+.col__time {
+  width: 10%;
+}
+
+@media (orientation: portrait) {
+  .col__name, .col__tech,
+  .col__desc, .col__time {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .text {
   color: #ffffff;
   text-align: center;
@@ -69,6 +90,7 @@ img {
 
 th, td {
   border: 1px solid;
+  border-collapse: collapse;
   padding: 2px;
 }
 
@@ -78,4 +100,30 @@ table {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (orientation: portrait) {
+  table {
+    display: block;
+  }
+
+  tr > th {
+    display: block;
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+  }
+
+  tr > td {
+    display: block;
+    border: 1px solid grey;
+    border-collapse: collapse;
+  }
+
+  tr {
+    display: block;
+    width: 100%;
+    border: 2px solid white;
+    border-collapse: collapse;
+  }
 }
