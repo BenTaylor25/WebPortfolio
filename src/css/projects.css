@@ -70,7 +70,8 @@ table h4 {
 @media (orientation: portrait) {
   .col__name, .col__tech,
   .col__desc, .col__time {
-    width: 100%;
+    width: calc(100% - 2px);
+    margin: 0;
     padding: 0;
   }
 }
@@ -88,7 +89,7 @@ img {
   margin-right: auto;
 }
 
-th, td {
+tr > th,  tr > td {
   border: 1px solid;
   border-collapse: collapse;
   padding: 2px;
@@ -105,6 +106,7 @@ table {
 @media (orientation: portrait) {
   table {
     display: block;
+    border: 0;
   }
 
   tr > th {
@@ -123,7 +125,7 @@ table {
   tr {
     display: block;
     width: 100%;
-    border: 2px solid white;
+    border: 3px solid white;
     border-collapse: collapse;
   }
 }
