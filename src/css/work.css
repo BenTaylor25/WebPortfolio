@@ -39,6 +39,11 @@
   }
 }
 
+.new_section {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
 img {
   display: block;
   margin-left: auto;
