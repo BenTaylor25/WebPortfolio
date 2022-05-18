@@ -1,4 +1,8 @@
 
+h3 > a:visited {
+    color: #0000EE;
+}
+
 .main {
     background: #000000;
     padding: 0 0;
