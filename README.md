@@ -6,3 +6,5 @@ Late 2021, I found a YouTube tutorial for building web apps, and I decided to gi
 
 The site is live at this link: <br>
 <u>https://bentaylor25.github.io/WebPortfolio/index.html</u>
+
+![WebPortfolio](https://user-images.githubusercontent.com/97246704/170102131-2231b9a5-2672-41bf-9800-de804c3168d0.PNG)
