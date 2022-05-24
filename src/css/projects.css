@@ -1,142 +1,79 @@
-/* Reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-/*h1, h2, h3, h4, h5, h6, p,*/ blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-body {
-  background-color: #000000;
-}
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* /Reset */
-
-
-/* Navbar Start */
-.navbar {
-  background: #222222;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  position: sticky;   /* sticks to the screen when you scroll */
-  top: 0;
-  z-index: 999;
-}
-
-.navbar__container {
-  display: flex;
-  justify-content: space-between;
-  height: 75px;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
-}
-
-#navbar__logo {   /* . means class; # means id */
-  background-size: 100%;
-  background-clip: text;   /* compatability? */
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-.navbar__logo__color {
-  background-color: #ffffff;
-}
-
-.navbar__logo__color:hover {
-  background-color: #0000ff;
-  transition: all 0.3s ease;
-}
-
-.navbar__menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.navbar__item {
-  height: 80px;
-}
-
-.navbar__links {
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
-  text-decoration: none;
-  height: 100%;
-  transition: all 0.3s ease;
-}
-
-.navbar__links:hover {
-  color: #0000ff;
-  transition: all 0.3s ease;
-}
-/* Navbar End */
-
-
-/* Main Start */
 .main {
   background: #000000;
-  padding: 25px 0;
+  padding: 0 0;
+  overflow-x: auto;   /* add scroll bar on small screens */
+  text-align: center;
+  font-family: "monaco", monospace;
+  margin-bottom: 7.5%;
+  color: #ffffff;
+}
+
+table a {
+  text-decoration: none;
+}
+
+table h1, table h2, table h3, table h4 {
+  color: #ffffff;
+  padding: 1%;
+}
+
+table h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+}
+
+table h2 {
+  font-size: 1rem;
+}
+
+table h3 {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+table h4 {
+  font-size: 0.9rem;
+}
+
+@media (orientation: portrait) {
+  table h1 {
+    font-size: 1.125rem;
+  }
+
+  table h2 {
+    font-size: 0.9rem;
+  }
+
+  table h3 {
+    font-size: 0.75rem;
+  }
+
+  table h4 {
+    font-size: 0.7;
+  }
+}
+
+.col__name {
+  width: 10%;
+}
+.col__tech {
+  width: 20%;
+}
+.col__desc {
+  width: 60%;
+}
+.col__time {
+  width: 10%;
+}
+
+@media (orientation: portrait) {
+  .col__name, .col__tech,
+  .col__desc, .col__time {
+    width: calc(100% - 2px);
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .text {
@@ -152,9 +89,10 @@ img {
   margin-right: auto;
 }
 
-th, td {
+tr > th,  tr > td {
   border: 1px solid;
-  padding: 5px;
+  border-collapse: collapse;
+  padding: 2px;
 }
 
 table {
@@ -164,4 +102,30 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-/* Main End */
+
+@media (orientation: portrait) {
+  table {
+    display: block;
+    border: 0;
+  }
+
+  tr > th {
+    display: block;
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+  }
+
+  tr > td {
+    display: block;
+    border: 1px solid grey;
+    border-collapse: collapse;
+  }
+
+  tr {
+    display: block;
+    width: 100%;
+    border: 3px solid white;
+    border-collapse: collapse;
+  }
+}

@@ -3,49 +3,162 @@
     <head>
         <meta charset="UTF-8" />
         <title>Ben Taylor - Bio</title>
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/navbar.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
         <link rel="stylesheet" href="../css/bio.css" />
+        <script src="../js/hamburger.js" defer></script>
         <link rel="icon" href="../../img/icon.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <!-- Navbar Section -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a href="./home.html" class="navbar__logo__color" id="navbar__logo">Ben Taylor</a>
+        <div class="not_footer">
+            <!-- Navbar Section -->
+            <nav class="navbar">
+                <div class="navbar__title">
+                    <a href="./home.html">
+                        Ben Taylor
+                    </a>
+                </div>
 
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="./bio.html" class="navbar__links" id="bio-page">Bio</a>
+                <a href="#" class="toggle_button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+
+                <div class="navbar__container">
+                    <ul>
+                        <a href="./bio.html" class="navbar__links"><li class="navbar__item"></li>
+                            Bio
+                        </a>
+
+                        <a href="./fortuities.html" class="navbar__links"><li class="navbar__item"></li>
+                            Fortuities
+                        </a>
+                        
+                        <a href="./work.html" class="navbar__links"><li class="navbar__item"></li>
+                            Work
+                        </a>
+                        
+                        <a href="./projects.html" class="navbar__links"><li class="navbar__item"></li>
+                            Projects
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main -->
+            <div class="main">
+                <h1><u>About Me</u></h1>
+                <h3>
+                    I am a student of Computer Science at Oxford Brookes University. <br>
+                    I am interested in Software Development/Engineering, Game Development, and Web Development, <br>
+                    and am keen to pursue a career in one of these areas after I graduate. <br>
+                    I am also interested in the subjects of Psychology, Language, History, and Philosophy. <br>
+                    I have hobby interests in Story Analysis, Video Games, and Rubik's Cubes. <br>
+                    I can solve a standard Rubik's cube in under a minute, and can solve any n-by-n cube (my largest is 9x9). <br>
+                </h3>
+
+                <h1 class="new_section"><u><b>
+                    Skills
+                </b></u></h1>
+                <ul class="side-by-side">
+                    <li>
+                        <h2><u>
+                            Programming Languages
+                        </u></h2>
+                        <h3>
+                            Python (2015) <br>
+                            Fuze4NS (2018) <br>
+                            C++ (2020) <br>
+                            Java (2021) <br>
+                            C# (2022) <br>
+                            JavaScript (2022) <br>
+                            TypeScript (2022) <br>
+                            <!--C (2022) <br>-->
+                        </h3>
                     </li>
-                    <li class="navbar__item">
-                        <a href="./info.html" class="navbar__links" id="info-page">Info</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="./projects.html" class="navbar__links" id="projects-page">Projects</a>
+                    <li>
+                        <h2><u>
+                            Other Technologies
+                        </u></h2>
+                        <h3>
+                            SQL (2020) <br>
+                            Git (2022) <br>
+                            GitHub (2022) <br>
+                            GitLab (2022) <br>
+                            HTML (2022) <br>
+                            CSS (2022) <br>
+                            NodeJS (2022) <br>
+                        </h3>
                     </li>
                 </ul>
+                <h3>
+                    Python was my introduction to programming in 2015. I was first exposed
+                    to it at school, but extended my knowledge past the curriculum and
+                    started making small tests. In 2018, I started tutoring programming using
+                    the Fuze Basic language, which was replaced with Fuze4 Nintendo Switch
+                    when the latter was released in 2019. As a member of the Fuze team, however,
+                    I had the chance to test early builds of the language. In 2020 I was studying
+                    Computer Science at A-Level. At this time, I learned basic SQL as part of the
+                    course, and elected to learn C++ for use in my final project (see Billiards
+                    in the Projects tab for more). In late 2021 I taught myself Java ahead of my
+                    Obejct-Oriented Programming module at Oxford Brookes the following semester.
+                    Shortly after, in 2022, I began experimenting with Git and GitHub, and have
+                    used both frequently since. In early 2022, I also had the opportunity to
+                    join a Software Development scheme with DigiVue, which required me to learn 
+                    C# and gain some familiarity with GitLab. A few months later, I decided to
+                    try out JavaScript and TypeScript with NodeJS. I quickly moved to HTML and
+                    CSS, in order to build this site, which required a bit of JS, but didn't 
+                    really elicit TS. Node and TS have thus taken a bit of a backseat but I 
+                    intend to revisit them both over the summer break. I would also like to 
+                    learn VueJS, as this is the frontend framework used by DigiVue, and C as I
+                    have a C/C++ Software Development module next year in the first semester
+                    as well as brushing up on my Java, C#, C++, and SQL.
+                    <br><br>
+                    In 2023 I would like to learn the Rust and Go languages as well as the 
+                    Angular, Tauri, and ElectronJS frameworks.
+                </h3>
+
+                <h1 class="new_section"><u><b>
+                    Education
+                </b></u></h1>
+                <h2><u>
+                    Oxford Brookes University - BSc Computer Science - Sep.2021 to May.2025
+                </u></h2>
+                <h3>
+                    (modules)<br><br>
+                    Problem Solving and Programming: A+ <br>
+                    Foundations of Computer Systems: A+ <br>
+                    Basic Communication and PC Networking: A <br>
+                    Information Systemsm: [current] <br>
+                    Object-Oriented Programming: [current] <br>
+                    DevOps: [current] <br>
+                    Mathematics for Computing: [current] <br>
+                </h3>
+
+                <img 
+                    class="new_section"
+                    style="margin-bottom: 2.5%;"
+                    src="..\..\img\widePic.jpg"
+                    alt="casual photo"
+                >
             </div>
-        </nav>
-
-        <!-- Main -->
-        <div class="main">
-            <h1 class="text">About Me</h1>
-            <h3 class="text">
-                I am a student of Computer Science at Oxford Brookes University. <br>
-                I am interested in Software Development/Engineering, Game Development, and Web Development, <br>
-                and am keen to pursue a career in one of these areas after I graduate. <br>
-                I am also interested in the subjects of Psychology, Language, History, and Philosophy. <br>
-                I have hobby interests in Story Analysis, Video Games, and Rubik's Cubes. <br>
-                I can solve a standard Rubik's cube in under a minute, and can solve any n-by-n cube (my largest is 9x9). <br>
-            </h3>
-            <img 
-                src="..\..\img\widePic.jpg",
-                alt="longShot",
-                width="312",
-                height="416"
-            >
-
-            <br>
-            <br>
         </div>
+
+        <footer>
+            <div class="social_media">
+                <a href="https://github.com/BenTaylor25" class="social_media__link">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/ben-taylor-oxford/" class="social_media__link">
+                    LinkedIn
+                </a>
+                <a href="https://www.youtube.com/channel/UCL8O61iBtOvLtsEMXS-1aJQ" class="social_media__link">
+                    YouTube
+                </a>
+            </div>
+        </footer>
     </body>
 </html>

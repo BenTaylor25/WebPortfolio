@@ -1,0 +1,42 @@
+
+footer {
+    background-color: #333333;
+    padding-top: 2vh;
+    height: 2rem;
+    padding-bottom: 2vh;
+}
+  
+.social_media {
+    display: grid;
+    margin-left: 30%;
+    margin-right: 30%;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    font-family: "monaco", monospace;
+}
+  
+.social_media__link {
+    color: white;
+    font-size: 1.25rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 7.5%;
+}
+  
+.not_footer {
+    min-height: calc(96vh - 2rem);
+}
+
+@media (max-width: 650px) {
+    footer {
+        height: 6.5rem;
+    }
+
+    .not_footer {
+        min-height: calc(96vh - 6.5rem);
+    }
+
+    .social_media {
+        grid-template-columns: auto;
+    }
+}

@@ -3,44 +3,78 @@
     <head>
         <meta charset="UTF-8" />
         <title>Ben Taylor</title>
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/navbar.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
         <link rel="stylesheet" href="../css/home.css" />
+        <script src="../js/hamburger.js" defer></script>
         <link rel="icon" href="../../img/icon.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <!-- Navbar Section -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a href="./home.html" class="navbar__logo__color" id="navbar__logo">Ben Taylor</a>
+        <div class="not_footer">
+            <!-- Navbar Section -->
+            <nav class="navbar">
+                <div class="navbar__title">
+                    <a href="./home.html">
+                        Ben Taylor
+                    </a>
+                </div>
 
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="./bio.html" class="navbar__links" id="bio-page">Bio</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="./info.html" class="navbar__links" id="info-page">Info</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="./projects.html" class="navbar__links" id="projects-page">Projects</a>
-                    </li>
-                </ul>
+                <a href="#" class="toggle_button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+
+                <div class="navbar__container">
+                    <ul>
+                        <a href="./bio.html" class="navbar__links"><li class="navbar__item"></li>
+                            Bio
+                        </a>
+
+                        <a href="./fortuities.html" class="navbar__links"><li class="navbar__item"></li>
+                            Fortuities
+                        </a>
+                        
+                        <a href="./work.html" class="navbar__links"><li class="navbar__item"></li>
+                            Work
+                        </a>
+                        
+                        <a href="./projects.html" class="navbar__links"><li class="navbar__item"></li>
+                            Projects
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main -->
+            <div class="main">
+                <h1>Ben Taylor</h1>
+                <h3>
+                    Computer Science Student; 
+                    <br>
+                    Aspiring Software Engineer.
+                </h3>
+                <img
+                    src="../../img/portrait.jpg",
+                    alt="passport photo"
+                >
             </div>
-        </nav>
-
-        <!-- Main -->
-        <div class="main">
-            <h1 class="text">Ben Taylor</h1>
-            <h3 class="text">
-                Computer Science Student; Aspiring Software Engineer.
-            </h3>
-            <img
-                src="../../img/portrait.jpg",
-                alt="portrait",
-                width="312", 
-                height="363"
-            >
-            
-            <br>
-            <br>
         </div>
+
+        <footer>
+            <div class="social_media">
+                <a href="https://github.com/BenTaylor25" class="social_media__link">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/ben-taylor-oxford/" class="social_media__link">
+                    LinkedIn
+                </a>
+                <a href="https://www.youtube.com/channel/UCL8O61iBtOvLtsEMXS-1aJQ" class="social_media__link">
+                    YouTube
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
