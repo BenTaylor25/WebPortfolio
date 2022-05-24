@@ -83,7 +83,7 @@ table {
   padding: 0 50px;
 }
 
-#navbar__logo {   /* . means class; # means id */
+#navbar__logo {
   background-size: 100%;
   background-clip: text;   /* compatability? */
   -webkit-background-clip: text;
