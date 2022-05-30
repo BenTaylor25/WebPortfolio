@@ -1,4 +1,17 @@
+To Do
+-----
 
-to do:
-    investigate why navbar is shorter on home page
-    fix "Ben Taylor" logo in Dark Reader mode
+- investigate why navbar is shorter on home page
+
+- fix "Ben Taylor" logo in Dark Reader mode
+
+- convert projects tab from table design to more user-friendly design
+    inspiration: https://www.sarahamann.dev/
+
+    grid of projects
+        each project
+            name
+            technologies
+            image (carousel)
+            description
+            github link
